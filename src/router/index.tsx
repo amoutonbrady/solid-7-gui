@@ -54,16 +54,28 @@ export function RouterView() {
 }
 
 export function Link(props: LinkProps) {
+  const [state] = useContext(RouterCtx);
+  const activeClass = () => props.activeClass || 'active-route';
+
   const handleClick = (e: Event & { target: HTMLAnchorElement }) => {
     e.preventDefault();
     history.push(props.href);
   };
 
   return (
-    <a href={props.href} onClick={handleClick}>
+    <a
+      href={props.href}
+      onClick={handleClick}
+      class={props.class}
+      classList={{ [activeClass()]: state.currentPath === props.href }}
+    >
       {props.children}
     </a>
   );
+}
+
+export function useRouter() {
+  return useContext(RouterCtx);
 }
 
 // TYPES
@@ -81,5 +93,7 @@ type RouterProps = {
 
 type LinkProps = {
   children: any;
+  class?: string;
+  activeClass?: string;
   href: string;
 };

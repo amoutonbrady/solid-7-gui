@@ -12,4 +12,19 @@ export const routes: Route[] = [
     path: '/about',
     component: lazy(() => import('./pages/about')),
   },
+  {
+    name: 'Counter',
+    path: '/counter',
+    component: lazy(() => import('./pages/counter')),
+  },
+  {
+    name: 'Temperature',
+    path: '/temperature',
+    component: lazy(() => import('./pages/temperature')),
+  },
+  {
+    name: 'Flight',
+    path: '/flight',
+    component: lazy(() => import('./pages/flight')),
+  },
 ];
