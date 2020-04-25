@@ -29,6 +29,11 @@ export default function Layout(props: Props) {
                 Flight
               </Link>
             </li>
+            <li>
+              <Link href="/timer" activeClass="underline text-white font-bold">
+                Timer
+              </Link>
+            </li>
           </ol>
         </nav>
       </aside>

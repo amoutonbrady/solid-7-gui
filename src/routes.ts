@@ -27,4 +27,9 @@ export const routes: Route[] = [
     path: '/flight',
     component: lazy(() => import('./pages/flight')),
   },
+  {
+    name: 'Timer',
+    path: '/timer',
+    component: lazy(() => import('./pages/timer')),
+  },
 ];
