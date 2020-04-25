@@ -5,6 +5,7 @@
     "moduleResolution": "node",
     "jsx": "preserve",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "types": ["babel-plugin-jsx-dom-expressions"]
   }
 }

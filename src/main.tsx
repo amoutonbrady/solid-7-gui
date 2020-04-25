@@ -1,5 +1,14 @@
 import { render } from 'solid-js/dom';
+import { Layout } from './components';
+import { routes } from './routes';
+import { Router, RouterView } from './router/index';
 
-const App = () => <h1>Hello world!</h1>;
+function App(): any {
+  return (
+    <Layout>
+      <RouterView />
+    </Layout>
+  );
+}
 
-render(App, document.getElementById('app'));
+render(Router({ routes, children: App }), document.getElementById('app'));
