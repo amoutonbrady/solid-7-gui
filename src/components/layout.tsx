@@ -11,6 +11,7 @@ export default function Layout(props: Props) {
             <li>
               <Link
                 href="/counter"
+                class="hover:underline"
                 activeClass="underline text-white font-bold"
               >
                 Counter
@@ -19,19 +20,37 @@ export default function Layout(props: Props) {
             <li>
               <Link
                 href="/temperature"
+                class="hover:underline"
                 activeClass="underline text-white font-bold"
               >
                 Temperature
               </Link>
             </li>
             <li>
-              <Link href="/flight" activeClass="underline text-white font-bold">
+              <Link
+                href="/flight"
+                class="hover:underline"
+                activeClass="underline text-white font-bold"
+              >
                 Flight
               </Link>
             </li>
             <li>
-              <Link href="/timer" activeClass="underline text-white font-bold">
+              <Link
+                href="/timer"
+                class="hover:underline"
+                activeClass="underline text-white font-bold"
+              >
                 Timer
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/crud"
+                class="hover:underline"
+                activeClass="underline text-white font-bold"
+              >
+                CRUD
               </Link>
             </li>
           </ol>

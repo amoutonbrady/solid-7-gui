@@ -32,4 +32,9 @@ export const routes: Route[] = [
     path: '/timer',
     component: lazy(() => import('./pages/timer')),
   },
+  {
+    name: 'Crud',
+    path: '/crud',
+    component: lazy(() => import('./pages/crud')),
+  },
 ];
